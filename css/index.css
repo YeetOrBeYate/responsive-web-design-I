@@ -215,7 +215,7 @@ MEDIA QUERYES**********************/
 @media screen and (max-width: 800px) {
 
 /***CONTAINER TAG**/
-body  .container{
+  .container{
     width: 100%;
   }
 

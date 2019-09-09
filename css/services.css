@@ -29,7 +29,7 @@ header{
 
 nav{
 
-  width: 600px;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
@@ -61,6 +61,49 @@ nav a:hover{
   padding: 15px;
   margin: 20px 15px;
   margin-bottom: 30px;
+
+}
+
+.jobs p{
+	padding-bottom: 10px;
+}
+
+.jobs a{
+  padding: 5px 30px;
+  text-decoration: none;
+  color: black;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.Facts{
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid black;
+  padding-top: 30px;
+}
+ul{
+  list-style-type: square;
+}
+li{
+  padding: 5px 0;
+}
+
+.copyRight{
+  margin-top: 90px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+
+  .container{
+    width: 100%;
+  }
+
+  .img img{
+    width: 100vw;
+		padding: 0;
+  }
 
 }
 
@@ -103,48 +146,5 @@ nav a:hover{
 .img img{
   width: 100vw;
 }
-
-}
-
-.jobs p{
-	padding-bottom: 10px;
-}
-
-.jobs a{
-  padding: 5px 30px;
-  text-decoration: none;
-  color: black;
-  border-radius: 2px;
-  border: 1px solid black;
-}
-
-.Facts{
-  display: flex;
-  justify-content: space-around;
-  border-top: 2px solid black;
-  padding-top: 30px;
-}
-ul{
-  list-style-type: square;
-}
-li{
-  padding: 5px 0;
-}
-
-.copyRight{
-  margin-top: 90px;
-  text-align: center;
-}
-
-@media screen and (max-width: 500px) {
-
-  .container{
-    width: 100%;
-
-  }
-
-  .img img{
-    width: 100vw;
-  }
 
 }
