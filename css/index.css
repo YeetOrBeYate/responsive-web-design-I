@@ -129,11 +129,17 @@ footer {
 /******************************************
 MEDIA QUERYES**********************/
 
+
+/*MOBILE*/
+
 @media screen and (max-width: 450px ) {
 
+/*****GENERAL SELECTORS*****/
   .container{
     width: 100%;
   }
+
+/***HEADER ITEMS****/
 
   header{
     display: flex;
@@ -141,44 +147,102 @@ MEDIA QUERYES**********************/
     justify-content: flex-end;
     flex-direction: column;
     flex-direction: column-reverse;
-    border: 1px solid black;
   }
   header nav {
   	width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-  }
-
-  header nav a:first-child {
-    margin-left: 0;
-  }
-
-  header nav a:last-child {
-    margin-right: 50px;
-  }
-
-  .logo{
-    margin: 0;
   }
 
   header nav a{
-    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 10px 0;
   }
+
+  header nav a:last-child{
+    border-bottom: 2px solid gray;
+  }
+
+  header nav a:first-child{
+    border-top: 2px solid gray;
+  }
+
+/***CTA SELCTORS***/
 
   .cta img{
     display: none;
   }
 
+  .cta-text{
+    width: 100%;
+    text-align: center;
+  }
+
+/***SEPARATOR IMAGE SELECTOR**/
+
   .sepImg img{
     width: 100vw;
   }
+
+/***TOP CONTENT***/
 
   .top-content{
     display: flex;
     flex-direction: column;
   }
+/***BOTTOM CONTENT****/
 
+  .bottom-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+/*TABLET*/
+@media screen and (max-width: 801px) {
+
+/***CONTAINER TAG**/
+  .container{
+
+    width: 100%;
+
+  }
+
+/***HEADER TAGS***/
+  header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .logo{
+    margin: 30px 0;
+  }
+
+/**CTA TAGS ***/
+
+  .cta img{
+    display: none;
+  }
+
+  .cta-text{
+    width: 100%;
+    text-align: center;
+  }
+
+  /***SEP IMG TAG***/
+
+  .sepImg img{
+    width: 100vw;
+  }
 
 }
