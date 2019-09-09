@@ -120,7 +120,7 @@ header .logo {
 	padding-top: 39px
 }
 
-footer {
+footer{
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
@@ -132,10 +132,10 @@ MEDIA QUERYES**********************/
 
 /*MOBILE*/
 
-@media screen and (max-width: 450px ) {
+@media screen and (max-width: 500px ) {
 
 /*****GENERAL SELECTORS*****/
-  .container{
+.container{
     width: 100%;
   }
 
@@ -202,17 +202,21 @@ MEDIA QUERYES**********************/
     flex-direction: column;
   }
 
+  /**CONTACT**/
+
+  .contact{
+    padding: 39px 10px;
+  }
+
 
 }
 
 /*TABLET*/
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 800px) {
 
 /***CONTAINER TAG**/
-  .container{
-
+body  .container{
     width: 100%;
-
   }
 
 /***HEADER TAGS***/
@@ -243,6 +247,12 @@ MEDIA QUERYES**********************/
 
   .sepImg img{
     width: 100vw;
+  }
+
+  /**CONTACT**/
+
+  .contact{
+    padding: 39px 10px;
   }
 
 }
