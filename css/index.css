@@ -1,3 +1,258 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+*{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+body {
+	line-height: 1;
+}
 
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 900px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header nav {
+	width: 70%;
+  display: flex;
+	justify-content: space-around;
+}
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+	color: black;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.cta .cta-text {
+  font-size: 77px;
+  text-align: center;
+}
+
+.cta .cta-text button {
+  background: white;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.top-content{
+	display: flex;
+}
+.text-content{
+	padding: 40px 10px;
+
+}
+.bottom-content{
+	display: flex;
+	justify-content: space-between;
+}
+.contact{
+	border-top: 1px solid black;
+	margin-top: 26px;
+	padding-top: 39px
+}
+
+footer{
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/******************************************
+MEDIA QUERYES**********************/
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 500px ) {
+
+/*****GENERAL SELECTORS*****/
+.container{
+    width: 100%;
+  }
+
+/***HEADER ITEMS****/
+
+  header{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  header nav {
+  	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  header nav a:last-child{
+    border-bottom: 2px solid gray;
+  }
+
+  header nav a:first-child{
+    border-top: 2px solid gray;
+  }
+
+/***CTA SELCTORS***/
+
+  .cta img{
+    display: none;
+  }
+
+  .cta-text{
+    width: 100%;
+    text-align: center;
+  }
+
+/***SEPARATOR IMAGE SELECTOR**/
+
+  .sepImg img{
+    width: 100vw;
+  }
+
+/***TOP CONTENT***/
+
+  .top-content{
+    display: flex;
+    flex-direction: column;
+  }
+/***BOTTOM CONTENT****/
+
+  .bottom-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /**CONTACT**/
+
+  .contact{
+    padding: 39px 10px;
+  }
+
+
+}
+
+/*TABLET*/
+@media screen and (max-width: 800px) {
+
+/***CONTAINER TAG**/
+  .container{
+    width: 100%;
+  }
+
+/***HEADER TAGS***/
+  header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .logo{
+    margin: 30px 0;
+  }
+
+/**CTA TAGS ***/
+
+  .cta img{
+    display: none;
+  }
+
+  .cta-text{
+    width: 100%;
+    text-align: center;
+  }
+
+  /***SEP IMG TAG***/
+
+  .sepImg img{
+    width: 100vw;
+  }
+
+  /**CONTACT**/
+
+  .contact{
+    padding: 39px 10px;
+  }
+
+}
